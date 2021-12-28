@@ -1,0 +1,39 @@
+
+.full-con{
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  margin: 1%;
+}
+small{
+  color: rgba(56, 56, 56, 0.938);
+  font-size: small;
+}
+.tid{
+  width: 31%;
+  margin: 1%;
+}
+
+p{
+  font-size: large;
+}
+
+.link{
+  text-decoration: none;
+  color : white;
+}
+.link:hover{
+  color : rgba(56, 56, 56, 0.938)
+}
+
+.icon-link{
+  text-decoration: none;
+}
+
+.icon-link:hover{
+  color: rgba(56, 56, 56, 0.938)
+}
