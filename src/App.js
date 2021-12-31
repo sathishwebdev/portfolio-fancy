@@ -303,7 +303,7 @@ function App() {
       </div>       
          <div className="full-con" >
            <h2 data-aos="fade-right" >Contact - Anytime - Anywhere</h2>
-         <div data-aos="fade-up"  >
+         <div data-aos="fade-down"  >
             <mui.IconButton
               color="inherit"
               className="icon-link"
