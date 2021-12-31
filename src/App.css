@@ -2,8 +2,8 @@
 .full-con{
   min-height: 100vh;
   display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   padding: 2%;
@@ -36,4 +36,8 @@ p{
 
 .icon-link:hover{
   color: rgba(56, 56, 56, 0.938)
+}
+.center{
+  margin-right: auto;
+  margin-left: auto;
 }
