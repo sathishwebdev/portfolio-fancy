@@ -69,6 +69,101 @@ function App() {
           </div>
         </div>
       </div>
+      
+
+          {/* projects */}
+          <div className="full-con"  >
+            <h2><Icons.Work style={{fontSize:"30px"}} /> MY WORKS.  </h2>
+        <div className="d-flex flex-wrap justify-content-center align-items-center " style={{flexDirection:"row"}}  >
+          <div data-aos="fade-right" className="pad" >
+              <h2>Projects i have done...</h2>
+          
+            <div style={{ width: "100%", maxWidth: "500px" }}>
+              <a href="https://facts.web.app" target="_blank" rel="noreferrer">
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  alt="voofacts"
+                  title="voofacts"
+                  src="project/voofacts.jpg"
+                />
+              </a>
+              <a href="https://bubloo2716.web.app" target="_blank" rel="noreferrer">
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  alt="bubloo | the chat app"
+                  title="bubloo"
+                  src="project/bubloo.jpg"
+                />
+              </a>
+              <a href="https://tic-tac-toe-sk.netlify.app" target="_blank" rel="noreferrer">
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  alt="tic-tac-toe"
+                  title="tic-tac-toe"
+                  src="project/tic-tac-toe.jpg"
+                />
+              </a>
+              <a href="https://proquote.netlify.app" target="_blank" rel="noreferrer">
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  alt="pro-quote"
+                  title="pro-quote"
+                  src="project/pro-quote.jpg"
+                />
+              </a>
+              <a href="https://user-crud-sk.netlify.app" target="_blank" rel="noreferrer">
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  alt="user-crud"
+                  title="user-crud"
+                  src="project/user.jpg"
+                />
+              </a>
+              <a href="https://github.com/sathishwebdev/hall-booking" target="_blank" rel="noreferrer">
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  alt="hall-booking"
+                  title="hall-booking | back end"
+                  src="project/hall-booking.jpg"
+                />
+              </a>
+            </div>
+          </div>
+          <div data-aos="fade-left" className="pad">
+          
+              <h2>Projects i working on...</h2>
+          
+          
+            <div style={{ width: "100%", maxWidth: "500px" }}>
+          
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  title="pizza guy"
+                  alt="pizza guy"
+                  src="project/pizza-guy.jpg"
+                />
+          
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  alt="cc"
+                  title="cc"
+                  src="project/cc.jpg"
+                />
+          
+            </div>
+          </div>
+        </div>
+      </div>       
+
+      
 {/* things i do with */}
       <div className="full-con"  >
         <div style={{ width: "100%", maxWidth: "800px" }}>
@@ -209,98 +304,6 @@ function App() {
           </div>
           </div>
     
-
-          {/* projects */}
-          <div className="full-con"  >
-            <h2><Icons.Work style={{fontSize:"30px"}} /> MY WORKS.  </h2>
-        <div className="d-flex flex-wrap justify-content-center align-items-center " style={{flexDirection:"row"}}  >
-          <div data-aos="fade-right" className="pad" >
-              <h2>Projects i have done...</h2>
-          
-            <div style={{ width: "100%", maxWidth: "500px" }}>
-              <a href="https://facts.web.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="voofacts"
-                  title="voofacts"
-                  src="project/voofacts.jpg"
-                />
-              </a>
-              <a href="https://bubloo2716.web.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="bubloo | the chat app"
-                  title="bubloo"
-                  src="project/bubloo.jpg"
-                />
-              </a>
-              <a href="https://tic-tac-toe-sk.netlify.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="tic-tac-toe"
-                  title="tic-tac-toe"
-                  src="project/tic-tac-toe.jpg"
-                />
-              </a>
-              <a href="https://proquote.netlify.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="pro-quote"
-                  title="pro-quote"
-                  src="project/pro-quote.jpg"
-                />
-              </a>
-              <a href="https://user-crud-sk.netlify.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="user-crud"
-                  title="user-crud"
-                  src="project/user.jpg"
-                />
-              </a>
-              <a href="https://github.com/sathishwebdev/hall-booking" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="hall-booking"
-                  title="hall-booking | back end"
-                  src="project/hall-booking.jpg"
-                />
-              </a>
-            </div>
-          </div>
-          <div data-aos="fade-left" className="pad">
-          
-              <h2>Projects i working on...</h2>
-          
-          
-            <div style={{ width: "100%", maxWidth: "500px" }}>
-          
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  title="pizza guy"
-                  alt="pizza guy"
-                  src="project/pizza-guy.jpg"
-                />
-          
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="cc"
-                  title="cc"
-                  src="project/cc.jpg"
-                />
-          
-            </div>
-          </div>
-        </div>
-      </div>       
          <div className="full-con" >
            <h2 data-aos="fade-right" >Contact - Anytime - Anywhere</h2>
          <div data-aos="fade-down"  >
