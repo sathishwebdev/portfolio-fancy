@@ -6,17 +6,18 @@ import AOS from "aos";
 AOS.init();
 // style
 
-// const Button = mui.styled(mui.Button)(({ theme }) => ({
-//   color: theme.palette.getContrastText(mui.colors.purple[500]),
-//   backgroundColor: "#000000",
-//   margin: "3%",
+const Button = mui.styled(mui.Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(mui.colors.purple[500]),
+  backgroundColor: "#000000",
+  margin: "3%",
+  fontFamily:"hussor-bold",
 
-//   "&:hover": {
-//     backgroundColor: "#a5a5a5",
-//     color: "black",
-//     boxShadow: "0px 0px 15px 1px",
-//   },
-// }));
+  "&:hover": {
+    backgroundColor: "#505050",
+    color: "white",
+    boxShadow: "0px 0px 20px 1px #0f0f0f",
+  },
+}));
 
 function App() {
   return (
@@ -66,6 +67,11 @@ function App() {
             >
               <Icons.Phone />
             </mui.IconButton>
+            <Button
+              href="https://drive.google.com/file/d/1ZMiJ4wpFBLgmgxT9a1kicj0v-u-roQWN/view?usp=sharing"
+            >
+              Resume
+            </Button>
           </div>
         </div>
       </div>
