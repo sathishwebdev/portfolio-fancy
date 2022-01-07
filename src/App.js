@@ -68,7 +68,7 @@ function App() {
               <Icons.Phone />
             </mui.IconButton>
             <Button
-              href="https://drive.google.com/file/d/1iyyAMEpz_luWgfNCyceAwmBf7BrH3hie/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1jnoo0RheBloIYQ_hj4tPBTxPZvBF7yvP/view?usp=drivesdk"
             >
               Resume
             </Button>
