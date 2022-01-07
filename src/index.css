@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #FEC10A;
   font-family: "hussor-bold";
+overflow-x : hidden;
 }
 
 code {
