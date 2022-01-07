@@ -13,6 +13,9 @@ body {
   font-family: "hussor-bold";
 overflow-x : hidden;
 }
+html{
+overflow-x : hidden
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
