@@ -139,6 +139,15 @@ function App() {
                   src="project/hall-booking.jpg"
                 />
               </a>
+              <a href="https://mentoralo.netlify.app" target="_blank" rel="noreferrer">
+                <img
+                  data-aos="flip-up"
+                  className="tid"
+                  alt="mentoralo"
+                  title="mentoralo"
+                  src="/project/mentoralo.jpg"
+                />
+              </a>
             </div>
           </div>
           <div data-aos="fade-left" className="pad">
@@ -249,6 +258,12 @@ function App() {
             className="tid"
             alt="Netlify"
             src="TID-img/netlify.jpg"
+          />
+          <img
+          data-aos="flip-up"
+          className="tid"
+          alt="Postman"
+          src="TID-img/postman.jpg"
           />
         </div>
       </div>
