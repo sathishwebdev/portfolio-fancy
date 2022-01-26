@@ -3,6 +3,7 @@ import "./App.css";
 import * as mui from "@mui/material";
 import * as Icons from "@mui/icons-material";
 import AOS from "aos";
+import projects from './project.json'
 AOS.init();
 // style
 
@@ -85,69 +86,15 @@ function App() {
               <h2>Projects i have done...</h2>
           
             <div style={{ width: "100%", maxWidth: "500px" }}>
-              <a href="https://factsvf.web.app" target="_blank" rel="noreferrer">
+              {projects.map((pro)=>(<a href={pro.link} target="_blank" rel="noreferrer">
                 <img
                   data-aos="flip-up"
                   className="tid"
-                  alt="voofacts"
-                  title="voofacts"
-                  src="project/voofacts.jpg"
+                  alt={pro.name}
+                  title={pro.name}
+                  src={pro.img}
                 />
-              </a>
-              <a href="https://bubloo2716.web.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="bubloo | the chat app"
-                  title="bubloo"
-                  src="project/bubloo.jpg"
-                />
-              </a>
-              <a href="https://tic-tac-toe-sk.netlify.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="tic-tac-toe"
-                  title="tic-tac-toe"
-                  src="project/tic-tac-toe.jpg"
-                />
-              </a>
-              <a href="https://proquote.netlify.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="pro-quote"
-                  title="pro-quote"
-                  src="project/pro-quote.jpg"
-                />
-              </a>
-              <a href="https://user-crud-sk.netlify.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="user-crud"
-                  title="user-crud"
-                  src="project/user.jpg"
-                />
-              </a>
-              <a href="https://github.com/sathishwebdev/hall-booking" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="hall-booking"
-                  title="hall-booking | back end"
-                  src="project/hall-booking.jpg"
-                />
-              </a>
-              <a href="https://mentoralo.netlify.app" target="_blank" rel="noreferrer">
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  alt="mentoralo"
-                  title="mentoralo"
-                  src="/project/mentoralo.jpg"
-                />
-              </a>
+              </a>))}
             </div>
           </div>
           <div data-aos="fade-left" className="pad">
