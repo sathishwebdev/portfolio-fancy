@@ -19,6 +19,11 @@ const Button = mui.styled(mui.Button)(({ theme }) => ({
     color: "white",
     boxShadow: "0px 0px 20px 1px #0f0f0f",
   },
+  '&:focus':{
+    border: 'none',
+    boxShadow: "none",
+    outline: "none"
+},
 }));
 
 function Home() {
@@ -344,13 +349,13 @@ const Projects = () =>{
           <Link className="link" to={`../project/${pro.name}`} > <h2>{pro.name}</h2></Link>
             <small>{`${pro.Description.substring(0, 50)}...`}</small><br/>
             {!pro.source ? `` :<Button
-              href={pro.source}
+              onClick={()=> window.open(pro.source, "_blank")}
               sx={{fontSize:"11px"}}
             >
              <Icons.CodeOutlined  /> Source
             </Button>}
             {!pro.link ? `` : <Button
-              href={pro.link}
+              onClick={()=> window.open(pro.link, "_blank")}
               sx={{fontSize:"11px"}}
             >
              <Icons.Link /> demo
@@ -427,13 +432,13 @@ const Project = () =>{
               display: 'flex', alignItems:'center', justifyContent: 'center'
             }} >
               {!project[0].source ? `` :<Button
-              href={project[0].source}
+             onClick={()=> window.open(project[0].source, "_blank")}
               sx={{fontSize:"11px"}}
             >
              <Icons.CodeOutlined  /> Source
             </Button>}
             {!project[0].link ? `` : <Button
-              href={project[0].link}
+              onClick={()=> window.open(project[0].link, "_blank")}
               sx={{fontSize:"11px"}}
             >
              <Icons.Link /> demo
