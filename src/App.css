@@ -69,19 +69,29 @@ p{
 }
 .pro-card{
   width: 90%;
-  max-height: 300px;
+  min-height: 300px;
   box-shadow: 0 0 25px 1px black;
   margin: 5%;
-  padding: 2%;
+  padding: 1%;
   border-radius: 15px;
   display: flex;  
   align-items: center;
 }
 .pro-img{
   border-radius: 25px;
-  max-width: 120px;
+  width: 120px;
   margin: 20px;
 }
+
+@media screen and (max-width: 600px) {
+  .pro-img{
+    width: 90%;
+  }
+  .pro-card{
+    flex-wrap: wrap;
+  }
+}
+
 .pro-details{
   color: whitesmoke;
   margin: 20px;
