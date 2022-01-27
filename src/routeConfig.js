@@ -53,46 +53,44 @@ const NavBar = () =>{
   return       <div
       className='nav'
   >
-  { location.pathname === '/' ? <Button
-   onClick={()=>{
+      { location.pathname === '/' ? <Button
+       onClick={()=>{
        navigate('./')
-   }}
-  >
+       }}
+      >
        Home
-   </Button> : <Button
-   
-   onClick={()=>{
+       </Button> : <Button
+       
+       onClick={()=>{
        navigate(-1)
-   }}
-
-   >
+       }}
+    
+       >
      <Icons.ChevronLeftRounded/>  Back
-   </Button> }
-
-   {location.pathname === '/' || location.pathname === '/projects'  ? '' : <Button
+       </Button> }
+    
+       {location.pathname === '/' || location.pathname === '/projects'  ? '' : <Button
      onClick={()=>{
          navigate('./')
      }}
     >
          Home
      </Button>
-   }
-
-   { location.pathname === '/projects' ? <Button
-   onClick={()=>{
+       }
+    
+       { location.pathname === '/projects' ? <Button
+       onClick={()=>{
        navigate('./')
-   }}
-  >
+       }}
+      >
        Home
-   </Button> : <Button
+       </Button> : <Button
         onClick={()=>{
            navigate('projects')
        }}
-   >
+       >
        Projects
-   </Button>}
-   
-   
-   
+       </Button>}
   </div>
+   
 }
