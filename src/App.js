@@ -91,7 +91,7 @@ function Home() {
               <h2>Projects i have done...</h2>
           
             <div style={{ width: "100%", maxWidth: "500px" }}>
-              {projects.map((pro)=>(<a href={pro.link} target="_blank" rel="noreferrer">
+              {projects.map((pro)=>(<Link to={`project/${pro.name}`} >
                 <img
                   data-aos="flip-up"
                   className="tid"
@@ -99,7 +99,7 @@ function Home() {
                   title={pro.name}
                   src={pro.img}
                 />
-              </a>))}
+              </Link>))}
             </div>
           </div>
           <div data-aos="fade-left" className="pad">
