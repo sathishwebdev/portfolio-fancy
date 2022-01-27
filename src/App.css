@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 2%;
-  margin: 1%;
+  background-color: #FEC10A;
 }
 small{
   color: rgba(56, 56, 56, 0.938);
@@ -40,4 +40,91 @@ p{
 .center{
   margin-right: auto;
   margin-left: auto;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color:rgb(31, 31, 31);
+  font-family: "hussor-bold";
+  position: fixed;
+  z-index: 1;
+}
+
+.projects{
+  background-color: rgb(20, 20, 20);
+  font-family: "hussor-bold";
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pro-con{
+  margin: 1%;
+  margin-top: 90px;
+  padding: 2%;
+}
+.pro-card{
+  width: 90%;
+  max-height: 300px;
+  box-shadow: 0 0 25px 1px black;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 15px;
+  display: flex;  
+  align-items: center;
+}
+.pro-img{
+  border-radius: 25px;
+  max-width: 120px;
+  margin: 20px;
+}
+.pro-details{
+  color: whitesmoke;
+  margin: 20px;
+}
+.pro-details h2{
+  color: #FEC10A;
+  text-transform: capitalize;
+}
+.pro-details small{
+  color: whitesmoke
+}
+
+article{
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article h1{
+  color: #FEC10A;
+  text-transform: capitalize;
+}
+
+article hr{
+  color: #a0a0a0;
+  background-color: #202020;
+  height: 2;
+  width: 100%
+}
+
+article p{
+  color: whitesmoke;
+}
+
+article img{
+  margin: 3%;
+  width: 100%;
+  max-width: 300px;
+}
+.horiz-pro{
+  display: flex;
+  min-height: 200px;
+  overflow-x: auto;
+  flex-wrap: wrap;
 }

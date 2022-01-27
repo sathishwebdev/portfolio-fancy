@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import * as mui from "@mui/material";
 import * as Icons from "@mui/icons-material";
 import AOS from "aos";
 import projects from './project.json'
+import { Link, useLocation, useParams } from "react-router-dom";
 AOS.init();
 // style
 
@@ -14,13 +15,13 @@ const Button = mui.styled(mui.Button)(({ theme }) => ({
   fontFamily:"hussor-bold",
 
   "&:hover": {
-    backgroundColor: "#505050",
+    backgroundColor: "rgba(56, 56, 56, 0.938)",
     color: "white",
     boxShadow: "0px 0px 20px 1px #0f0f0f",
   },
 }));
 
-function App() {
+function Home() {
   return (
     <div>
       <div className="full-con" style={{ flexDirection: "row", flexWrap:"wrap" }} >
@@ -80,8 +81,7 @@ function App() {
 
           {/* projects */}
           <div className="full-con"  >
-            <h2><Icons.Work style={{fontSize:"30px"}} /> MY WORKS.  </h2>
-        <div className="d-flex flex-wrap justify-content-center align-items-center " style={{flexDirection:"row"}}  >
+        <div className="d-flex flex-wrap justify-content-center align-items-center "   >
           <div data-aos="fade-right" className="pad" >
               <h2>Projects i have done...</h2>
           
@@ -212,6 +212,12 @@ function App() {
           alt="Postman"
           src="TID-img/postman.jpg"
           />
+          <img
+          data-aos="flip-up"
+          className="tid"
+          alt="Bootstrap"
+          src="TID-img/bootstrap.jpg"
+          />
         </div>
       </div>
 
@@ -229,7 +235,7 @@ function App() {
             >
             
               <div style={{ padding: "2%", margin: "1%" }}>
-                <article >
+                <div >
                   <img
                     className="d-block d-lg-none"
                     alt="me"
@@ -258,7 +264,7 @@ function App() {
                     </span>
                     .
                   </p>
-                </article>
+                </div>
               </div>
             </div>
           </div>
@@ -316,4 +322,146 @@ function App() {
   );
 }
 
-export default App;
+const Projects = () =>{
+  return (
+    <div className="projects" >
+      <div className="pro-con">
+      {projects.map((pro, key)=>(
+        
+        <div key={key} className='pro-card'>
+          <div>
+            <Link to={`../project/${pro.name}`} >
+              <img
+                data-aos="flip-up"
+                className="pro-img"
+                alt={pro.name}
+                title={pro.name}
+                src={`../${pro.img}`}
+              />
+            </Link>
+          </div>
+          <div className="pro-details" >
+          <Link className="link" to={`../project/${pro.name}`} > <h2>{pro.name}</h2></Link>
+            <small>{`${pro.Description.substring(0, 50)}...`}</small><br/>
+            {!pro.source ? `` :<Button
+              href={pro.source}
+              sx={{fontSize:"11px"}}
+            >
+             <Icons.CodeOutlined  /> Source
+            </Button>}
+            {!pro.link ? `` : <Button
+              href={pro.link}
+              sx={{fontSize:"11px"}}
+            >
+             <Icons.Link /> demo
+            </Button> }
+          </div>
+        </div>
+        
+        ))}
+        </div>
+    </div>
+  )
+}
+
+const Project = () =>{
+  const {ProName} = useParams()
+  const location = useLocation()
+  const [project, setProject] = useState(null)
+
+  useEffect(()=>{
+    setProject(projects.filter(pro=> pro.name === ProName))
+  },[ProName])
+
+  const share = async (data) =>{
+    try {
+      await navigator.share(data)
+      console.log('MDN shared successfully')
+    } catch(err) {
+      alert('Error: ' + err.message)
+    }
+  }
+
+
+
+  return (
+      <div className="projects" style={{
+        alignItems: 'normal',
+        justifyContent: 'center'
+      }} >
+        <div className="pro-con" style={{width: '100%'}}>
+         {
+          !project ? <p>Loading...</p> : <article>
+            <section style={{display: 'flex', alignItems:'center'}} >
+                <div><img src={`../${project[0].img}`} alt={project[0].name} className="pro-img" style={{borderRadius:'50%', width:'60px'}}  />  </div>
+              <div style={{lineHeight:"0.1"}} >
+                <h1>{project[0].name}</h1><br />
+                <small>Sathish Kumar S</small>
+              </div>
+              <div>
+                <mui.IconButton
+                  sx={{
+                    color: 'white',
+                    margin:'3%'
+                  }}
+                  onClick={()=>{
+                    share({
+                      title: project[0].name,
+                      text: 'Project By Sathish Kumar S',
+                      url: `https://sathishwebdev.netlify.app${location.pathname}`
+                    })
+                  }}
+                >
+                  <Icons.Share/>
+                </mui.IconButton>
+              </div>
+            </section>
+            <hr/>
+            <section>
+              <div style={{textAlign:'center'}}>
+                <img src={`../${project[0].img}`} alt={project[0].name}  />
+              </div>
+              <p>{project[0].Description}</p>
+            </section>
+            <section style={{
+              display: 'flex', alignItems:'center', justifyContent: 'center'
+            }} >
+              {!project[0].source ? `` :<Button
+              href={project[0].source}
+              sx={{fontSize:"11px"}}
+            >
+             <Icons.CodeOutlined  /> Source
+            </Button>}
+            {!project[0].link ? `` : <Button
+              href={project[0].link}
+              sx={{fontSize:"11px"}}
+            >
+             <Icons.Link /> demo
+            </Button> }
+            <Button
+              sx={{fontSize:"11px"}}
+              onClick={()=>{
+                share({
+                  title: project[0].name,
+                  text: 'Project By Sathish Kumar S',
+                  url: `https://sathishwebdev.netlify.app${location.pathname}`
+                })
+              }}
+            >
+              <Icons.Share/> Share
+            </Button>
+            </section>
+
+          </article> 
+         } 
+        </div>          
+        </div>
+  )
+}
+
+
+export {
+  Home,
+  Projects,
+  Project
+}

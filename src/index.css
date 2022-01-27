@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FEC10A;
+  /* background-color: #FEC10A; */
   font-family: "hussor-bold";
 overflow-x : hidden;
 }
