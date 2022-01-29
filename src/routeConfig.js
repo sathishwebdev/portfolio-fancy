@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route, useLocation, useNavigate} from 'react-router-dom'
-import { Home, Project, Projects} from './App'
+import { Home, Project, Projects, Blogs} from './App'
 import * as mui from '@mui/material'
 import * as Icons from '@mui/icons-material'
 
@@ -30,12 +30,14 @@ function RouteConfig() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='projects' element={<Projects />} />
         <Route exact path='project/:ProName' element={<Project />} />
+        <Route exact path='blogs' element={<Blogs />} />
 
         <Route path='*' element={<div className='App'>
-            <div className="App-header" >
+            <div className="full-con" >
                 <h1 style={{
                     fontSize:"50px"
                 }} >404</h1>
+                <img src='./mearn.png' alt="relax" width="100%" />
             </div>
         </div>} />
     </Routes>
@@ -91,6 +93,14 @@ const NavBar = () =>{
        >
        Projects
        </Button>}
+       { location.pathname === '/blogs' ? '' : <Button
+        onClick={()=>{
+           navigate('blogs')
+       }}
+       >
+       Blogs
+       </Button>}
   </div>
    
 }
+

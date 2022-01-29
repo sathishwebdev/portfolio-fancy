@@ -91,7 +91,7 @@ function Home() {
               <h2>Projects i have done...</h2>
           
             <div style={{ width: "100%", maxWidth: "500px" }}>
-              {projects.map((pro)=>(<Link to={`project/${pro.name}`} >
+              {projects.map((pro, key)=>(<Link key={key} to={`project/${pro.name}`} >
                 <img
                   data-aos="flip-up"
                   className="tid"
@@ -108,15 +108,6 @@ function Home() {
           
           
             <div style={{ width: "100%", maxWidth: "500px" }}>
-          
-                <img
-                  data-aos="flip-up"
-                  className="tid"
-                  title="pizza guy"
-                  alt="pizza guy"
-                  src="project/pizza-guy.jpg"
-                />
-          
                 <img
                   data-aos="flip-up"
                   className="tid"
@@ -124,7 +115,6 @@ function Home() {
                   title="cc"
                   src="project/cc.jpg"
                 />
-          
             </div>
           </div>
         </div>
@@ -464,9 +454,18 @@ const Project = () =>{
   )
 }
 
+const Blogs = () =>{
+  return (
+    <div className='full-con' >
+      <div><img style={{maxHeight:'95vh'}} src="./comingsoon.png" alt='ASAP' /></div>
+    </div>
+  )
+}
+
 
 export {
   Home,
   Projects,
-  Project
+  Project,
+  Blogs
 }

@@ -38,5 +38,12 @@
         "img" : "project/mentoralo.jpg",
         "Description":"Mentoralo is a web app which assign a mentor for a students. It manage the mentor and student data and mentor for student automatically",
         "source": "https://github.com/sathishwebdev/mentoralo"
+    },
+    {
+        "name":"Pizza Guy",
+        "link":"https://pizzaguy.netlify.app",
+        "img" : "project/pizza-guy.jpg",
+        "Description":"Pizza guy is a template of complete pizza delivery app.",
+        "source": "https://github.com/sathishwebdev/pizza"
     }
 ]
