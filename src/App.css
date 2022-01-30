@@ -135,7 +135,6 @@ article p{
 article img{
   margin: 3%;
   width: 100%;
-  max-width: 300px;
 }
 .horiz-pro{
   display: flex;
