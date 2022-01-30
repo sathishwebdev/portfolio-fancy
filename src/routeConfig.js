@@ -1,8 +1,9 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route, useLocation, useNavigate} from 'react-router-dom'
-import { Home, Project, Projects, Blogs} from './App'
+import { Project} from './App'
 import * as mui from '@mui/material'
 import * as Icons from '@mui/icons-material'
+import {Home, Projects, Blogs, Post} from './views'
 
 const Button = mui.styled(mui.Button)(({ theme }) => ({
     color: theme.palette.getContrastText(mui.colors.purple[500]),
@@ -31,13 +32,14 @@ function RouteConfig() {
         <Route exact path='projects' element={<Projects />} />
         <Route exact path='project/:ProName' element={<Project />} />
         <Route exact path='blogs' element={<Blogs />} />
+        <Route exact path='blog/post/:postId/:postName' element={<Post />} />
 
         <Route path='*' element={<div className='App'>
             <div className="full-con" >
                 <h1 style={{
                     fontSize:"50px"
                 }} >404</h1>
-                <img src='./mearn.png' alt="relax" width="100%" />
+                <img src='https://sathishwebdev.netlify.app/mearn.png' alt="relax" width="100%" />
             </div>
         </div>} />
     </Routes>

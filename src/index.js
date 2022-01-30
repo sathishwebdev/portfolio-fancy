@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import RouteConfig from './routeConfig.js';
 import reportWebVitals from './reportWebVitals';
+import "./App.css";
+import AOS from "aos";
+AOS.init();
 
 ReactDOM.render(
   <React.StrictMode>

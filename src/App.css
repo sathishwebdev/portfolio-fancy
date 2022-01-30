@@ -116,6 +116,11 @@ article h1{
   text-transform: capitalize;
 }
 
+article h2, h3{
+  color: #fcdc4e;
+  text-transform: capitalize;
+}
+
 article hr{
   color: #a0a0a0;
   background-color: #202020;
@@ -124,7 +129,7 @@ article hr{
 }
 
 article p{
-  color: whitesmoke;
+  color: rgb(199, 197, 197);
 }
 
 article img{
@@ -137,4 +142,14 @@ article img{
   min-height: 200px;
   overflow-x: auto;
   flex-wrap: wrap;
+}
+.post{
+  font-family: 'hussor-bold';
+  background-color: rgb(20, 20, 20);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(228, 228, 228);
+  padding-top: 100px;
 }
