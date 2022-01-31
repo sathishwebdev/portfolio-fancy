@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-let Result = []
+// let Result = []
 
 const BlogPost = () => {
-    
+   const Result = []
     let url = `https://www.googleapis.com/blogger/v3/blogs/261381331229313907/posts?key=AIzaSyBSa0px6K3mH5HkhhzbH_Tl4MQiHysI03A&fetchImages=true&maxResult=999`
 
     const [token, setToken] = useState(undefined)

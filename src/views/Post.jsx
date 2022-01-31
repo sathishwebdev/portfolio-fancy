@@ -53,20 +53,14 @@ const Post = () =>{
             <>
             <Helmet>
             <title>{post.title}</title>
-            <meta name="description" content=" Blog to Share my thought and knowledge to the world. This is the medium where i can expose myself and what i capable to do." />
-            <meta content='website' property='og:type'/>
-            <meta content='Blog | CodeZone | SathishWebDev' property='og:title'/>
+            
+            <meta content= {post.title} property='og:title'/>
             <meta content={`https://sathishwebdev.netlify.app/blog/post/${postId}/${post.param}`} property='og:url'/>
-            <meta content='Blog to Share my thought and knowledge to the world. This is the medium where i can expose myself and what i capable to do.' property='og:description'/>
             <meta content='CodeZone | SathishWebDev' property='og:site_name'/>
             <meta content='https://sathishwebdev.netlify.app/c.png' property='og:image'/>
-            <meta property="og:image:width" content="800" />
-            <meta property="og:image:height" content="600" />
-            <meta content='summary_large_image' name='twitter:card'/>
             <meta content='https://sathishwebdev.netlify.app/c.png' name='twitter:image'/>
             <meta content= {post.title} name='twitter:title'/>
-            <meta content='https://sathishwebdev.netlify.app/' name='twitter:domain'/>
-            <meta content='Blog to Share my thought and knowledge to the world. This is the medium where i can expose myself and what i capable to do.' name='twitter:description'/>
+            
             </Helmet>
             <article>
               <section style={{ display: "flex", alignItems: "center" }}>
