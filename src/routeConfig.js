@@ -100,7 +100,7 @@ const NavBar = () =>{
            navigate('blogs')
        }}
        >
-       Blogs
+       Blog
        </Button>}
   </div>
    

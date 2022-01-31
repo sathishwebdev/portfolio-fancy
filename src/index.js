@@ -8,9 +8,7 @@ import AOS from "aos";
 AOS.init();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <RouteConfig />
-  </React.StrictMode>,
+    <RouteConfig />,
   document.getElementById('root')
 );
 

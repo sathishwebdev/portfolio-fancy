@@ -18,7 +18,7 @@ const BlogPost = () => {
 
        fetch(url).then(response => response.json()).then(data=>{
           
-            data.items.forEach(({url, author, title, content, images, lables, id}) => {
+            data.items.forEach(({url, author, title, content, images, lables, id, updated}) => {
                 let param = url
                 param = param.split('/')
                 param = param[5].split('.')[0];
@@ -30,7 +30,8 @@ const BlogPost = () => {
                     title,
                     postImage : images[0].url,
                     lables,
-                    id
+                    id,
+                    updated
             
                 })
             })
