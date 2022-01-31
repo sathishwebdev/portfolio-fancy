@@ -4,7 +4,6 @@ import BlogPost from "../model/BlogPost";
  
  const Blogs = () => {
    let posts = BlogPost()
-  console.log(posts)
     return (
       <div className="projects">
         <div className="pro-con">

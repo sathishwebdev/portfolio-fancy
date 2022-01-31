@@ -78,7 +78,7 @@ const Project = () => {
             <hr />
             <section>
               <div style={{ textAlign: "center" }}>
-                <img src={`../${project[0].img}`} alt={project[0].name} />
+                <img style={{ maxWidth: "300px" }} src={`../${project[0].img}`} alt={project[0].name} />
               </div>
               <p>{project[0].Description}</p>
             </section>

@@ -17,7 +17,7 @@ const BlogPost = () => {
         }
 
        fetch(url).then(response => response.json()).then(data=>{
-          console.log(data)
+          
             data.items.forEach(({url, author, title, content, images, lables, id}) => {
                 let param = url
                 param = param.split('/')

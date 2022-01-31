@@ -44,7 +44,7 @@ const Post = () =>{
         alignItems: "normal",
       }}
     >
-      <div className="post-con" style={{ width: "100%" }}>
+      <div style={{ width: "100%" }}>
         {!post ? (
           <p>Loading...</p>
         ) : (
@@ -75,7 +75,7 @@ const Post = () =>{
             </section>
             <hr />
             <section>
-              <div dangerouslySetInnerHTML={{__html: post.content}} >
+              <div className="post-con" dangerouslySetInnerHTML={{__html: post.content}} >
                 
               </div>
             </section>

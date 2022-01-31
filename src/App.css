@@ -130,6 +130,7 @@ article hr{
 
 article p{
   color: rgb(199, 197, 197);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 article img{
@@ -149,5 +150,15 @@ article img{
   align-items: center;
   flex-wrap: wrap;
   color: rgb(228, 228, 228);
+  padding: 3%;
   padding-top: 100px;
+  
+}
+
+.post-con{
+  padding: 3%;
+  margin: 1%;
+}
+.post-con a img{
+  max-width: 90%;
 }
