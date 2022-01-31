@@ -3,7 +3,6 @@ import { useLocation, useParams } from "react-router-dom";
 import * as Icons from '@mui/icons-material'
 import * as mui from '@mui/material'
 import { Button } from "../components/mui";
-import {Helmet} from 'react-helmet'
 
 const Post = () =>{
     const { postId } = useParams();
@@ -51,17 +50,6 @@ const Post = () =>{
             <p>Loading...</p>
           ) : (
             <>
-            <Helmet>
-            <title>{post.title}</title>
-            
-            <meta content= {post.title} property='og:title'/>
-            <meta content={`https://sathishwebdev.netlify.app/blog/post/${postId}/${post.param}`} property='og:url'/>
-            <meta content='CodeZone | SathishWebDev' property='og:site_name'/>
-            <meta content='https://sathishwebdev.netlify.app/c.png' property='og:image'/>
-            <meta content='https://sathishwebdev.netlify.app/c.png' name='twitter:image'/>
-            <meta content= {post.title} name='twitter:title'/>
-            
-            </Helmet>
             <article>
               <section style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ lineHeight: "0.1" }}>
