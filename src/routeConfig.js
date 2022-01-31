@@ -96,9 +96,7 @@ const NavBar = () =>{
        Projects
        </Button>}
        { location.pathname === '/blogs' ? '' : <Button
-        onClick={()=>{
-           navigate('blogs')
-       }}
+        href="blogs"
        >
        Blog
        </Button>}
