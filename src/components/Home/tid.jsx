@@ -1,8 +1,8 @@
 import ThingsModel from "../../model/ThingsModel"
 const Tid = () => (
-    <div className="full-con">
+    <div id="skill" className="full-con" style={{alignItems:'top'}} >
         <div style={{ width: "100%", maxWidth: "800px" }}>
-          <h2>Things i do with...</h2>
+          <h2 style={{textAlign:'center'}} > Things i do with...</h2>
           <br />
         </div>
 

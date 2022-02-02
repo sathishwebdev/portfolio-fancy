@@ -4,6 +4,7 @@ import IntroIconModel from '../../model/IntroIconModel'
 const Intro = () => (<div
         className="full-con"
         style={{ flexDirection: "row", flexWrap: "wrap" }}
+        id="home"
       >
         <div data-aos="fade-right">
           <img
@@ -13,8 +14,8 @@ const Intro = () => (<div
             src="mypic.jpg"
           />
         </div>
-        <div data-aos="fade-left">
-          <h1 style={{ fontSize: "500%" }}>Sathish Kumar S</h1>
+        <div  data-aos="fade-left" className="pad" >
+          <h1 className="titleName">Sathish Kumar S</h1>
           <small>MERN STACK - WEB DEVELOPER</small>
           {/* social icons */}
           <div>
@@ -31,7 +32,7 @@ const Intro = () => (<div
 
             <Button 
             onClick={()=>{
-                window.open("https://drive.google.com/file/d/1jnoo0RheBloIYQ_hj4tPBTxPZvBF7yvP/view?usp=drivesdk", "_blank")}}>
+                window.open("https://drive.google.com/file/d/19XIUhWqhkc1aMPHvvWYVxsqr7xrrl1ZR/view?usp=sharing", "_blank")}}>
               Resume
             </Button>
           </div>

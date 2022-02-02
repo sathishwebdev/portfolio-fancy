@@ -2,7 +2,7 @@ import IconButton from '../mui/IconButton'
 import {LinkedIn, GitHub, Mail, Phone} from '@mui/icons-material'
 
 const Contact = () =>(
-    <div className="full-con">
+    <div id='contact' className="full-con">
         <h2 data-aos="fade-right">Contact - Anytime - Anywhere</h2>
         <div data-aos="fade-down">
           <IconButton

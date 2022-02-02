@@ -26,6 +26,7 @@ const Post = () =>{
             lables: data.lables    
         })
     })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [postId]);
 
   const share = async (data) => {

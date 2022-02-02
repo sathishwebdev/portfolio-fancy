@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import * as mui from "@mui/material";
 import * as Icons from "@mui/icons-material";
 import AOS from "aos";
 import projects from "./project.json";
 import { useLocation, useParams } from "react-router-dom";
 import Button from './components/mui/Button'
 import BlogPost from './model/BlogPost';
+import { IconButton } from "./components/mui";
 
 AOS.init();
 
@@ -58,7 +58,7 @@ const Project = () => {
                 <small>Sathish Kumar S</small>
               </div>
               <div>
-                <mui.IconButton
+                <IconButton
                   sx={{
                     color: "white",
                     margin: "3%",
@@ -72,7 +72,7 @@ const Project = () => {
                   }}
                 >
                   <Icons.Share />
-                </mui.IconButton>
+                </IconButton>
               </div>
             </section>
             <hr />

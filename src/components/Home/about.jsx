@@ -1,7 +1,7 @@
 const About = () =>(
-    <div className="full-con" style={{ flexDirection: "row" }}>
+    <div id="about" className="full-con" style={{ flexDirection: "row" }}>
         <div style={{ width: "100%", maxWidth: "800px" }}>
-          <h1>About Me !</h1>
+          <h2 style={{textAlign:'center'}} >About Me !</h2>
           <div
             className="center"
             style={{
