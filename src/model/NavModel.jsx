@@ -1,23 +1,23 @@
 const NavModel = [
     {
         name: 'Home',
-        link: '../#home'
+        link: '/#home'
     },
     {
         name:'About',
-        link: '../#about'
+        link: '/#about'
     },
     {
         name:'Skills',
-        link:'../#skill'
+        link:'/#skill'
     },
     {
         name:'Projects',
-        link:'../#projects'
+        link:'/#projects'
     },
     {
         name:'Contact',
-        link:'../#contact'
+        link:'/#contact'
     },
 ]
 

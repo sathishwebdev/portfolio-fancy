@@ -66,7 +66,7 @@ const NavBar = () =>{
       className='nav'
   >
       { location.pathname === '/' ? <Button
-       href="#home"
+       href="/#home"
       >
        Home
        </Button> : <Button
@@ -88,22 +88,22 @@ const NavBar = () =>{
      </Button>
        }
         <Button
-        href="../#about"
+        href="/#about"
        >
        About
        </Button>
        <Button
-        href="../#skill"
+        href="/#skill"
        >
        Skills
        </Button>
       <Button
-        href='../#projects'
+        href='/#projects'
        >
        Projects
        </Button>
       <Button
-        href="../#contact"
+        href="/#contact"
        >
        Contact
        </Button>
