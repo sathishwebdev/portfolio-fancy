@@ -20,7 +20,7 @@ const Project = () => {
 
   useEffect(() => {
     setProject(projects.filter((pro) => pro.name === ProName));
-  }, [ProName]);
+  }, [ProName, projects]);
 
   const share = async (data) => {
     try {

@@ -32,7 +32,7 @@ const Intro = () => (<div
 
             <Button 
             onClick={()=>{
-                window.open("https://drive.google.com/file/d/19XIUhWqhkc1aMPHvvWYVxsqr7xrrl1ZR/view?usp=sharing", "_blank")}}>
+                window.open("https://drive.google.com/file/d/1lg9I6Ivm4EvVejI9DbvzOgWsNGKQIKd3/view?usp=sharing", "_blank")}}>
               Resume
             </Button>
           </div>
