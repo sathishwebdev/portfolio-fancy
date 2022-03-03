@@ -124,7 +124,11 @@ const NavBar = () =>{
 }
 
 const CollapesNav = () =>{
- 
+  
+  const location = useLocation()
+
+  const navigate = useNavigate()
+
   const [navStatus, setNavStatus] = useState(false)
 
   const CloseMenu = () =>{
@@ -142,8 +146,26 @@ const CollapesNav = () =>{
     <IconButton
       onClick={!navStatus ? OpenMenu : CloseMenu}
     >
-      {!navStatus ? <Icons.Menu fontSize= "large"/> :<Icons.Close sx={{color:'whitesmoke'}} fontSize='large' />}
+      {!navStatus ? <Icons.Menu fontSize= "large" sx={{color:location.pathname === '/' ? "unset" : "gray"}}/> :<Icons.Close sx={{color:'whitesmoke'}} fontSize='large' />}
     </IconButton>
+
+    <div style={{
+         marginLeft:"auto",
+         marginRight:"10px",
+       }}>
+      { location.pathname === '/' ?'' : <IconButton
+      
+         onClick={()=>{
+         navigate(-1)
+         }}
+      
+         >
+       <Icons.ChevronLeftRounded sx={{
+         color:"gray",
+         fontSize:"30px"
+       }} />
+         </IconButton> }
+    </div>
   </div>
     <div
     className='collopse-nav' id="c-nav"

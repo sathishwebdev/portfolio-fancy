@@ -57,6 +57,10 @@ small{
 }
 
 .nav-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   position: fixed;
   z-index: 2;
 }
@@ -90,6 +94,7 @@ small{
   padding: 3%;
   background-color: #202020;
   width: 100%;
+  max-width: 800px;
   border-radius: 15px 15px 0 0;
 }
 .pro-card{
@@ -125,6 +130,7 @@ small{
 
 
 .pro-details{
+  width: 100%;
   color: whitesmoke;
   margin: 20px;
 }
@@ -165,9 +171,7 @@ article p{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-article img{
-  margin: 3%;
-}
+
 .horiz-pro{
   display: flex;
   min-height: 200px;

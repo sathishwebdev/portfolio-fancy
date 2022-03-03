@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import * as Icons from "@mui/icons-material";
 import AOS from "aos";
-import projects from "./project.json";
+import ProjectModel from "./model/ProjectModel";
 import { useLocation, useParams } from "react-router-dom";
 import Button from './components/mui/Button'
 import BlogPost from './model/BlogPost';
@@ -13,6 +13,7 @@ AOS.init();
 
 
 const Project = () => {
+  let projects = ProjectModel
   const { ProName } = useParams();
   const location = useLocation();
   const [project, setProject] = useState(null);
@@ -29,7 +30,7 @@ const Project = () => {
       alert("Error: " + err.message);
     }
   };
-
+console.log(project)
   return (
     <div
       className="projects"
@@ -50,7 +51,7 @@ const Project = () => {
                   alt={project[0].name}
                   className="pro-img"
                   style={{ borderRadius: "50%", width: "60px" }}
-                />{" "}
+                />
               </div>
               <div style={{ lineHeight: "0.1" }}>
                 <h1>{project[0].name}</h1>
@@ -77,8 +78,8 @@ const Project = () => {
             </section>
             <hr />
             <section>
-              <div style={{ textAlign: "center" }}>
-                <img style={{ maxWidth: "300px" }} src={`../${project[0].img}`} alt={project[0].name} />
+              <div style={{ textAlign: "center", padding:"1%" }}>
+                <img style={{ maxWidth: "300px", width:"100%" }} src={`../${project[0].img}`} alt={project[0].name} />
               </div>
               <p>{project[0].Description}</p>
             </section>
@@ -87,17 +88,26 @@ const Project = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                flexWrap: "wrap"
               }}
             >
               {!project[0].source ? (
                 ``
               ) : (
-                <Button
-                  onClick={() => window.open(project[0].source, "_blank")}
-                  sx={{ fontSize: "11px" }}
-                >
-                  <Icons.CodeOutlined /> Source
-                </Button>
+                <>
+                   {project[0].source.front && <Button
+                      onClick={() => window.open(project[0].source.front, "_blank")}
+                      sx={{ fontSize: "11px" }}
+                    >
+                      <Icons.CodeOutlined /> Front-end Source
+                    </Button>}
+                   {project[0].source.back && <Button
+                      onClick={() => window.open(project[0].source.back, "_blank")}
+                      sx={{ fontSize: "11px" }}
+                    >
+                      <Icons.CodeOutlined /> Back-end Source
+                    </Button>}
+                  </>
               )}
               {!project[0].link ? (
                 ``

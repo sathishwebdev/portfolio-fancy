@@ -16,6 +16,10 @@ const NavModel = [
         link:'/#projects'
     },
     {
+        name:"Project List",
+        link:"/projects"
+    },
+    {
         name:'Contact',
         link:'/#contact'
     },
