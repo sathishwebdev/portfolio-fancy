@@ -19,16 +19,16 @@ const ProjectModel = [
         Description:"Tic-Tac-Toe is game that we all play in our bored college days with pen and paper. I createed that as web app which start with Toss and maintain a scoreboard till refresh or restart the game.",
         source :{front : "https://github.com/sathishwebdev/tic-tac-toe"}
     },
-    {
-        name:"Shorty",
-        link:"https://shorty-sk.netlify.app/",
-        img: "project/shorty.jpg",
-        Description:"Shorty is a URL shortner which shrink your long urls and give you some analytics by sharing short url. This Shortner has complete authentication process and anlaytics which has to update,now only views can be calculated.",
-        source:{
-            front: "https://github.com/sathishwebdev/url-shortner",
-            back:"https://github.com/sathishwebdev/api.shorty"
-        }
-    },
+    // {
+    //     name:"Shorty",
+    //     link:"https://shorty-sk.netlify.app/",
+    //     img: "project/shorty.jpg",
+    //     Description:"Shorty is a URL shortner which shrink your long urls and give you some analytics by sharing short url. This Shortner has complete authentication process and anlaytics which has to update,now only views can be calculated.",
+    //     source:{
+    //         front: "https://github.com/sathishwebdev/url-shortner",
+    //         back:"https://github.com/sathishwebdev/api.shorty"
+    //     }
+    // },
     {
         name:"Linkru",
         link:"https://linkru.netlify.app/",
