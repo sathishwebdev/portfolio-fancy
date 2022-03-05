@@ -20,6 +20,10 @@ const ThingsModel = [
         link:"TID-img/git.jpg"
     },
     {
+        name:"GitHub",
+        link:"TID-img/github.jpg"
+    },
+    {
         name : "npm",
         link:"TID-img/npm.png"
     },
