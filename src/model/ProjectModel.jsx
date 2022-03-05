@@ -38,6 +38,16 @@ const ProjectModel = [
             front: "https://github.com/sathishwebdev/linkstore",
             back:"https://github.com/sathishwebdev/api.linkstore"
         }
+    },
+    {
+        name:"Store of Stories",
+        link:"https://storeofstories.netlify.app",
+        img:"project/storeofstories.jpg",
+        Description:"Store of stories which is blog web app. it is a single blog app which can possess lots of users and users can create a profile, upadte their profile, write their stories to publish. It is just an simple version of Blog web App. ",
+        source:{
+            front:"https://github.com/sathishwebdev/blog",
+            back:"https://github.com/sathishwebdev/api.blog",
+        }
     }
    
 ]
