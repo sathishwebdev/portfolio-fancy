@@ -1,19 +1,31 @@
 const ThingsModel = [
     {
-        name:"React",
-        link:"TID-img/react.jpg"
+        name:"html5",
+        link:"TID-img/html.jpg"
     },
     {
-        name:"MongoDB",
-        link:"TID-img/mongodb.jpg"
+        name: "CSS",
+        link:"TID-img/css.jpg"
+    },
+    {
+       name : "Bootstrap",
+       link:"TID-img/bootstrap.jpg" 
     },
     {
         name:"Nodejs",
         link:"TID-img/node.jpg"
     },
     {
-        name: "Heroku",
-        link:"TID-img/heroku.jpg"
+        name : "npm",
+        link:"TID-img/npm.png"
+    },
+    {
+        name:"React",
+        link:"TID-img/react.jpg"
+    },
+    {
+        name:"MongoDB",
+        link:"TID-img/mongodb.jpg"
     },
     {
         name:"git",
@@ -24,21 +36,10 @@ const ThingsModel = [
         link:"TID-img/github.jpg"
     },
     {
-        name : "npm",
-        link:"TID-img/npm.png"
-    },
-    {
-        name:"html5",
-        link:"TID-img/html.jpg"
-    },
-    {
-        name: "CSS",
-        link:"TID-img/css.jpg"
-    },
-    {
         name : "VS Code",
         link:"TID-img/vscode.jpg"
-    },{
+    },
+    {
         name : "firebase",
         link:"TID-img/firebase.jpg"
     },
@@ -51,12 +52,12 @@ const ThingsModel = [
         link:"TID-img/netlify.jpg"
     },
     {
-        name : "Postman",
-        link:"TID-img/postman.jpg"
+        name: "Heroku",
+        link:"TID-img/heroku.jpg"
     },
     {
-       name : "Bootstrap",
-       link:"TID-img/bootstrap.jpg" 
+        name : "Postman",
+        link:"TID-img/postman.jpg"
     }
 ]
 
