@@ -3,8 +3,9 @@ import * as Icons from "@mui/icons-material";
 import ProjectModel from "../model/ProjectModel";
 import { Link } from "react-router-dom";
 import Button from '../components/mui/Button'
-
+  
 const Projects = () => {
+
     return (
       <div className="projects">
         <div className="pro-con">

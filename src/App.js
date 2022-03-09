@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import * as Icons from "@mui/icons-material";
 import AOS from "aos";
@@ -7,9 +7,10 @@ import { useLocation, useParams } from "react-router-dom";
 import Button from './components/mui/Button'
 import BlogPost from './model/BlogPost';
 import { IconButton } from "./components/mui";
+import { Projects } from "./views";
 
 AOS.init();
-
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop) 
 
 
 const Project = () => {
@@ -17,15 +18,16 @@ const Project = () => {
   const { ProName } = useParams();
   const location = useLocation();
   const [project, setProject] = useState(null);
-
+  const forScroll = useRef(null)
+  const scroll = () => scrollToRef(forScroll)
   useEffect(() => {
     setProject(projects.filter((pro) => pro.name === ProName));
+    scroll();
   }, [ProName, projects]);
 
   const share = async (data) => {
     try {
       await navigator.share(data);
-      console.log("MDN shared successfully");
     } catch (err) {
       alert("Error: " + err.message);
     }
@@ -33,6 +35,7 @@ const Project = () => {
 console.log(project)
   return (
     <div
+    ref={forScroll}
       className="projects"
       style={{
         alignItems: "normal",
@@ -135,6 +138,9 @@ console.log(project)
           </article>
         )}
       </div>
+      <aside>
+        <Projects/>
+      </aside>
     </div>
   );
 };

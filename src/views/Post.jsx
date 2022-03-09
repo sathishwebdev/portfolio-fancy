@@ -32,7 +32,6 @@ const Post = () =>{
   const share = async (data) => {
     try {
       await navigator.share(data);
-      console.log("MDN shared successfully");
     } catch (err) {
       alert("Error: " + err.message);
     }

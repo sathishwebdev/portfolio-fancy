@@ -10,7 +10,10 @@ const ProjectModel = [
         name: "Bubloo",
         link : "https://bubloo2716.web.app",
         img: "project/bubloo.jpg",
-        Description:"The web app is created with React js framework and Firebase Real Time Database. In this App we can create a public chat room for group chat and also can do private chit-chat. This Project helps me to learn more about array and react js framework along with firebase. At first this project had firestore but due to usage limitations in firestore, i did with firebase database."
+        Description:"The web app is created with React js framework and Firebase Real Time Database. In this App we can create a public chat room for group chat and also can do private chit-chat. This Project helps me to learn more about array and react js framework along with firebase. At first this project had firestore but due to usage limitations in firestore, i did with firebase database.",
+        source:{
+            front:"https://github.com/sathishwebdev/Bubloo-v2"
+        }
     },
     {
         name: "Tic-Tac-Toe",
