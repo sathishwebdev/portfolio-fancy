@@ -3,11 +3,11 @@ import "./App.css";
 import * as Icons from "@mui/icons-material";
 import AOS from "aos";
 import ProjectModel from "./model/ProjectModel";
-import { useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import Button from './components/mui/Button'
 import BlogPost from './model/BlogPost';
 import { IconButton } from "./components/mui";
-import { Projects } from "./views";
+
 
 AOS.init();
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop) 
@@ -32,19 +32,22 @@ const Project = () => {
       alert("Error: " + err.message);
     }
   };
-console.log(project)
+
   return (
     <div
     ref={forScroll}
       className="projects"
       style={{
-        alignItems: "normal",
+        alignItems: "center",
         justifyContent: "center",
+        flexDirection:"column",
+        paddingTop:"70px"
       }}
     >
-      <div className="pro-con" style={{ width: "100%" }}>
+     
+      <div className="pro-con" style={{ width: "97%"}}>
         {!project ? (
-          <p>Loading...</p>
+          <div className="loader"></div>
         ) : (
           <article>
             <section style={{ display: "flex", alignItems: "center" }}>
@@ -138,9 +141,33 @@ console.log(project)
           </article>
         )}
       </div>
-      <aside>
-        <Projects/>
-      </aside>
+      <div className=" pro-con " style={{
+          overflowX:"auto",
+          marginBottom:"150px",
+          padding:"1%",
+          width: "97%"
+        }}>
+        <div className="d-flex align-items-center" style={{
+          overflowX:"auto"
+        }}> {
+            ProjectModel.map(({name, img}, i)=>(
+               project &&  name === project[0].name ? '' :
+                <div key={i} className="pad">
+                  <Link to={`/project/${name}`} className="Link">
+                  <img width="100vh" src={`/${img}`} alt={name} />
+                  </Link>
+                </div>
+        
+            ))
+          }
+          </div>
+         
+      </div>
+      <div className="fixed-bottom text-uppercase d-flex d-md-none align-items-center justify-content-center" style={{backgroundColor:"#FEC10A", width:"100%", minHeight:"50px", fontSize:"20px"}} >
+
+          <a href="mailto:sathishweb27@gmail.com" style={{color:"black", cursor:"pointer"}}>Mail me</a>
+
+      </div>
     </div>
   );
 };

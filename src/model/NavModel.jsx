@@ -15,10 +15,10 @@ const NavModel = [
         name:'Projects',
         link:'/#projects'
     },
-    {
-        name:"Project List",
-        link:"/projects"
-    },
+    // {
+    //     name:"Project List",
+    //     link:"/projects"
+    // },
     {
         name:'Contact',
         link:'/#contact'

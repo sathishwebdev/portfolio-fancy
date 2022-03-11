@@ -3,7 +3,7 @@ import * as Icons from "@mui/icons-material";
 const IntroIconModel = [
     {
         icon : <Icons.LinkedIn />,
-        link : "https://www.linkedin.com/in/sathish-kumar-b96348179/"
+        link : "https://www.linkedin.com/in/sathish-kumar-s-b96348179"
     },
     {
         icon : <Icons.GitHub />,
