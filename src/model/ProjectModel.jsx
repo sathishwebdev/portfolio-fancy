@@ -51,6 +51,16 @@ const ProjectModel = [
             front:"https://github.com/sathishwebdev/blog",
             back:"https://github.com/sathishwebdev/api.blog",
         }
+    },
+    {
+        name:"SLMS | Simple Loan Management System",
+        link:"https://lms-sk.netlify.app",
+        img:"project/LMS.jpg",
+        Description:"Manage your client's finance in LMS. Gnerate invoices. Calculate Interests.",
+        source:{
+            front:"https://github.com/sathishwebdev/lms",
+            back:"https://github.com/sathishwebdev/api.lms",
+        }
     }
    
 ]
