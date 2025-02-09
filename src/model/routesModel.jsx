@@ -6,7 +6,7 @@ const RoutesModel= () => {
     const routes = []
 
     posts.forEach(({id,param, updated})=>{
-        routes.push({url : `https://sathishwebdev.netlify.app/blog/post/${id}/${param}`, updated})
+        routes.push({url : `https://sathishwebdev.com/blog/post/${id}/${param}`, updated})
     })
 
     return routes

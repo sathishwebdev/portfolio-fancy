@@ -6,7 +6,7 @@ const Tid = () => (
           <br />
         </div>
 
-        <div style={{ width: "100%", maxWidth: "500px" }}>
+        <div  data-aos="fade-right" className="row justify-content-center align-items-center" style={{ width: "100%", maxWidth : "1200px"}}>
          {ThingsModel.map(({name, link}, id)=>( <img
             data-aos="flip-up"
             className="tid"

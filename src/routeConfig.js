@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route, useLocation, useNavigate} from 'react-rout
 import { Project} from './App'
 import * as mui from '@mui/material'
 import * as Icons from '@mui/icons-material'
-import {Home, Projects} from './views'
+import {Home, Projects, Blogs, Post} from './views'
 import { IconButton } from './components/mui'
 import NavModel from './model/NavModel'
 
@@ -38,8 +38,8 @@ function RouteConfig() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='projects' element={<Projects />} />
         <Route exact path='project/:ProName' element={<Project />} />
-        {/* <Route exact path='blogs' element={<Blogs />} />
-        <Route exact path='blog/post/:postId/:postName' element={<Post />} /> */}
+        <Route exact path='blogs' element={<Blogs />} />
+        <Route exact path='blog/post/:postId/:postName' element={<Post />} />
 
         <Route path='*' element={<div className='App'>
             <div className="full-con" >
@@ -107,8 +107,8 @@ const NavBar = () =>{
        >
        Contact
        </Button>
-{/* 
-       <mui.Button
+{ 
+      /* <mui.Button
        sx={{
          backgroundColor:'#ffce0a',
          color:'black',
@@ -116,8 +116,9 @@ const NavBar = () =>{
        }}
 
        >
-        <Icons.AttachMoneyRounded /> Donate
-       </mui.Button> */}
+        <Icons.AttachMoneyRounded /> Buy me a Coffee ☕
+       </mui.Button> */
+       }
       
   </div>
    

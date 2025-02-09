@@ -8,7 +8,7 @@ const ProjectDisplay = () =>(
             <h1>Projects</h1>
           </div>
            <>
-            <div data-aos="fade-right" style={{width:'100%', maxWidth:"500px"}} >
+            <div  className="row justify-content-center align-items-center"  data-aos="fade-right" style={{width:'100%', maxWidth:"1200px"}} >
               {ProjectModel.map((pro, key) => (
                   <Link key={key}  to={`project/${pro.name}`} className='link'>
                     <img 

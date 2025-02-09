@@ -74,7 +74,7 @@ const Project = () => {
                     share({
                       title: project[0].name,
                       text: "Project By Sathish Kumar S",
-                      url: `https://sathishwebdev.netlify.app${location.pathname}`,
+                      url: `https://sathishwebdev.com${location.pathname}`,
                     });
                   }}
                 >
@@ -131,7 +131,7 @@ const Project = () => {
                   share({
                     title: project[0].name,
                     text: "Project By Sathish Kumar S",
-                    url: `https://sathishwebdev.netlify.app${location.pathname}`,
+                    url: `https://https://sathishwebdev.com${location.pathname}`,
                   });
                 }}
               >

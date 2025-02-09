@@ -1,15 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://sathishwebdev.netlify.app</loc>
+  <loc>https://sathishwebdev.com</loc>
 </url>
 <url>
-  <loc>https://t.me/creators_tamil_nadu_india</loc>
+  <loc>https://sathishwebdev.com/#contact</loc>
 </url>
 <url>
-  <loc>https://t.me/tamil_web_developers</loc>
+  <loc>https://instagram.sathishwebdev.com</loc>
 </url>
 <url>
-  <loc>https://t.me/sathishwebdev</loc>
+  <loc>https://whatsapp.sathishwebdev.com</loc>
 </url>
+<url>
+  <loc>https://voofacts.sathishwebdev.com</loc>
+</url>
+<url>
+  <loc>https://tictactoe.sathishwebdev.com</loc>
+</url>
+<url>
+  <loc>https://git.sathishwebdev.com</loc>
+</url>
+<url>
+  <loc>https://linkedin.sathishwebdev.com</loc>
+</url>
+
 </urlset>
