@@ -47,7 +47,7 @@ function RouteConfig() {
                 <h1 style={{
                     fontSize:"50px"
                 }} >404</h1>
-                <img src='https://sathishwebdev.netlify.app/mearn.png' alt="relax" width="100%" style={{maxWidth:'500px'}} />
+                <img src='./mearn.png' alt="relax" width="100%" style={{maxWidth:'500px'}} />
             </div>
         </div>} />
     </Routes>

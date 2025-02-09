@@ -1,55 +1,27 @@
 const About = () =>(
-    <div id="about" className="full-con" style={{ flexDirection: "row" }}>
-        <div style={{ width: "100%", maxWidth: "800px" }}>
-          <h2 style={{textAlign:'center'}} >About Me !</h2>
+    <div className=" full-con" style={{ flexDirection: "row" }}>
+        <div style={{ width: "100%", maxWidth: "1200px" }}>
+          <h2 style={{textAlign:'center', fontSize:"52px"}} >About Me !</h2>
           <div
             className="center"
-            style={{
-              maxWidth: "500px",
-              padding: "3%",
-            }}
           >
             <div style={{ padding: "2%", margin: "1%" }}>
               <div>
-                <img
-                  className="d-block d-lg-none"
-                  alt="me"
-                  title="me"
-                  style={{ width: "100%" }}
-                  src="about.jpg"
-                />
-                <h4>
-                  H! Thizz <sup>zz</sup> Sathish,
+                <h4 style={{fontSize:"36px"}}>
+                Hey there! I’m Sathish 👋
                 </h4>
-                <p>
-                  In this fast developing digital world, I proud to say that i'm
-                  a developer. I specially trained to develope amazing websites
-                  like portfolios for a celeberities or organisations, Ecommerce
-                  pages, Product launching sites, Blog etc., I completed my MERN
-                  Stack developer course in{" "}
-                  <span>
-                    <a
-                      className="link"
-                      href="https://www.guvi.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GUVI
-                    </a>
-                  </span>
-                  .
+                <p style={{fontSize:"24px"}}>
+                I’m Sathish, an Android Developer specializing in Java and building high-performance, scalable mobile applications. My expertise lies in creating efficient, user-friendly apps with seamless UI/UX and backend integrations.
+
+🔹 Core Skills: Android Development (Java), API Integration, Performance Optimization
+🔹 Tech Stack: Java, Kotlin (Exploring), Firebase, REST APIs, SQLite, Jetpack Components
+🔹 Development Focus: Writing clean, maintainable code, optimizing app performance, and implementing modern Android architectures
+
+I’m passionate about solving real-world problems through technology and constantly improving my skills to build better, faster, and more efficient applications. 🚀
                 </p>
               </div>
             </div>
           </div>
-        </div>
-        <div data-aos="zoom-out" className="d-none d-lg-block">
-          <img
-            alt="me"
-            title="me"
-            style={{ height: "45vh" }}
-            src="about1.jpg"
-          />
         </div>
       </div>
 )

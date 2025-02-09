@@ -33,6 +33,30 @@ const Project = () => {
     }
   };
 
+  const scrollToNext = () => {
+    const sections = ["projects", "skill", "contact", "about", "home"];
+    const scrollPosition = window.scrollY;
+    let nextSection = null;
+
+    sections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section && section.offsetTop > scrollPosition + 10 && !nextSection) {
+            nextSection = section;
+        }
+    });
+
+    if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowDown') {
+      scrollToNext();
+    }
+  });
+
   return (
     <div
     ref={forScroll}

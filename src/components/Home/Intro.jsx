@@ -4,7 +4,6 @@ import IntroIconModel from '../../model/IntroIconModel'
 const Intro = () => (<div
         className="full-con"
         style={{ flexDirection: "row", flexWrap: "wrap" }}
-        id="home"
       >
         <div data-aos="fade-right">
           <img
@@ -16,7 +15,7 @@ const Intro = () => (<div
         </div>
         <div  data-aos="fade-left" className="pad" >
           <h1 className="titleName">Sathish Kumar S</h1>
-          <small>MERN STACK - WEB DEVELOPER</small>
+          <small>MERN STACK - ANDROID DEVELOPER</small>
           {/* social icons */}
           <div>
             {IntroIconModel.map((data,id)=>(
