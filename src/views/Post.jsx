@@ -67,7 +67,7 @@ const Post = () =>{
                       share({
                         title: post.title,
                         text: `${post.title} - by ${post.author} \n\n`,
-                        url: `https://sathishwebdev.netlify.app${location.pathname}`,
+                        url: `https://sathishwebdev.com${location.pathname}`,
                       });
                     }}
                   >
@@ -94,7 +94,7 @@ const Post = () =>{
                     share({
                       title: post[0].name,
                       text: "post By Sathish Kumar S",
-                      url: `https://sathishwebdev.netlify.app${location.pathname}`,
+                      url: `https://sathishwebdev.com${location.pathname}`,
                     });
                   }}
                 >
