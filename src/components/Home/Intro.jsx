@@ -3,7 +3,7 @@ import IntroIconModel from '../../model/IntroIconModel'
 
 const Intro = () => (<div
         className="full-con"
-        style={{ flexDirection: "row", flexWrap: "wrap" }}
+        style={{ flexDirection: "row", flexWrap: "wrap", paddingTop:"200px" }}
       >
         <div data-aos="fade-right">
           <img

@@ -2,13 +2,13 @@ import ThingsModel from "../../model/ThingsModel"
 const Tid = () => {
   
   return (
-    <div className="full-con">
-        <div style={{ width: "100%", maxWidth: "800px" }}>
+    <div className="dark-con">
+        <div style={{ maxWidth: "800px" }}>
           <h2 style={{textAlign:'center'}} > Things i do with...</h2>
           <br />
         </div>
 
-        <div style={{ width: "100%", maxWidth : "1200px"}}>
+        <div className="row justify-content-center align-items-center" style={{  maxWidth : "1200px"}}>
 
 <div  className="col">
         {Object.keys(ThingsModel).map(( key, id)=>

@@ -1,5 +1,5 @@
 const About = () =>(
-    <div className=" full-con" style={{ flexDirection: "row" }}>
+    <div className="dark-con" style={{ flexDirection: "row" }}>
         <div style={{ width: "100%", maxWidth: "1200px" }}>
           <h2 style={{textAlign:'center'}} >About Me !</h2>
           <div
@@ -11,7 +11,7 @@ const About = () =>(
                 Hey there! I’m Sathish 👋
                 </h4>
                 <p>
-                I’m Sathish, an Android Developer specializing in Java and building high-performance, scalable mobile applications. My expertise lies in creating efficient, user-friendly apps with seamless UI/UX and backend integrations.
+                An Android Developer specializing in Java and building high-performance, scalable mobile applications. My expertise lies in creating efficient, user-friendly apps with seamless UI/UX and backend integrations.
 
 <br/>🔹 Core Skills: Android Development (Java), API Integration, Performance Optimization
 <br/>🔹 Tech Stack: Java, Kotlin (Exploring), Firebase, REST APIs, SQLite, Jetpack Components

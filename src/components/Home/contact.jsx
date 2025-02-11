@@ -3,9 +3,8 @@ import IconButton from '../mui/IconButton'
 import {LinkedIn, GitHub, Mail, Phone} from '@mui/icons-material'
 
 const Contact = () =>{
-  const iframe = '<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1_ezCehQHSaKzrlghcB2XmjznV84Wt6lHE56-XZMXJSQM7ClThcaTlm4rx5-dlKM52ot7LMvmA?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>'
   return(
-    <div className="p-5 full-con  row justify-content-center align-items-center" >
+    <div className="p-8 con  row justify-content-center align-items-center" >
       <h2>Contact - Anytime - Anywhere</h2>
         <div>
           <IconButton

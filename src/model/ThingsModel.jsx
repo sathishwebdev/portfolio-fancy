@@ -63,6 +63,10 @@ const ThingsModel = {
     ],
     consoles:[
         {
+            name : "MS Office",
+            link:"TID-img/msoffice.jpg"
+        },
+        {
             name : "npm",
             link:"TID-img/npm.png"
         },
@@ -91,6 +95,14 @@ const ThingsModel = {
         {
             name:"Realm DB",
             link:"TID-img/realmdb.jpg"
+        },
+        {
+            name:"MySQL DB",
+            link:"TID-img/mysql.jpg"
+        },
+        {
+            name:"DynamoDB",
+            link:"TID-img/dynamo.jpg"
         }
     ]
 }
