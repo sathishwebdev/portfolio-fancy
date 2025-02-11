@@ -12,8 +12,10 @@ const Tid = () => {
 
 <div  className="col">
         {Object.keys(ThingsModel).map(( key, id)=>
+        <>
+        <p id={`${key}-${id}`} className="d-block d-xl-none" style={{  color: "#fcdc4e"}} >{key.toUpperCase()}</p>
         <div className="row">
-        <h3 id={`${key}-${id}`} className="d-none d-lg-block" style={{textAlign:"center", writingMode:"sideways-lr", textOrientation:"sideways"}} >{key}</h3>
+        <p id={`${key}-${id}`} className="d-none d-xl-block" style={{textAlign:"center", writingMode:"sideways-lr", textOrientation:"sideways", color: "#fcdc4e"}} >{key.toUpperCase()}</p>
         <div className="gallery">{
               ThingsModel[key].map(({name, link}, id2)=>(
                 ( <img
@@ -21,10 +23,11 @@ const Tid = () => {
                   title={name}
                   alt={name}
                   src={link}
+                  loading='lazy'
                 />)
               ))}
               </div>
-              </div>
+              </div></>
         )}
 </div>
         </div>

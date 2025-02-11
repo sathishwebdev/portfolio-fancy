@@ -11,6 +11,7 @@ const Intro = () => (<div
             title="poster"
             style={{ height: "45vh" }}
             src="mypic.jpg"
+            loading='lazy'
           />
         </div>
         <div  data-aos="fade-left" className="pad" >
@@ -31,7 +32,7 @@ const Intro = () => (<div
 
             <Button 
             onClick={()=>{
-                window.open("https://drive.google.com/file/d/1Up2lLrwllfxjkwyJ69iCI6j4T3FpUtNS/view?usp=sharing", "_blank")}}>
+                window.open("https://drive.google.com/file/d/1Y-TElTBYmANI5Q3_HZbnfTnOy9euAPWe/view?usp=sharing", "_blank")}}>
               Resume
             </Button>
           </div>

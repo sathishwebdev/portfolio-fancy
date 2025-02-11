@@ -14,6 +14,7 @@ const ProjectDisplay = () =>(
                       alt={pro.name}
                       title={pro.name}
                       src={pro.img}
+                      loading='lazy'
                     />
                      </Link>
               ))}
