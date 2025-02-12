@@ -6,6 +6,7 @@ import * as Icons from '@mui/icons-material'
 import {Home, Projects, Blogs, Post} from './views'
 import { IconButton } from './components/mui'
 import NavModel from './model/NavModel'
+import { Contact } from './components/Home'
 
 
 const Button = mui.styled(mui.Button)(({ theme }) => ({
@@ -40,6 +41,7 @@ function RouteConfig() {
         <Route exact path='project/:ProName' element={<Project />} />
         <Route exact path='blogs' element={<Blogs />} />
         <Route exact path='blog/post/:postId/:postName' element={<Post />} />
+        <Route exact path='contact' element={<div className='full-con' ><Contact /></div>} />
 
         <Route path='*' element={<div className='App'>
             <div className="full-con" >

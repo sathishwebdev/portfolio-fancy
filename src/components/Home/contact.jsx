@@ -1,6 +1,6 @@
 import React from 'react';
 import IconButton from '../mui/IconButton'
-import {LinkedIn, GitHub, Mail, Phone} from '@mui/icons-material'
+import {LinkedIn, GitHub, Mail, Phone, WhatsApp, Instagram} from '@mui/icons-material'
 
 const Contact = () =>{
   return(
@@ -13,6 +13,21 @@ const Contact = () =>{
             onClick={()=>{window.open("https://linkedin.sathishwebdev.com", '_blank')}}
           >
             <LinkedIn sx={{ fontSize: "50px" }} />
+          </IconButton>
+
+          <IconButton
+            color="inherit"
+            className="icon-link"
+            onClick={()=>{window.open("https://whatsapp.sathishwebdev.com", '_blank')}}
+          >
+            <WhatsApp sx={{ fontSize: "50px" }} />
+          </IconButton>
+          <IconButton
+            color="inherit"
+            className="icon-link"
+            onClick={()=>{window.open("https://instagram.sathishwebdev.com", '_blank')}}
+          >
+            <Instagram sx={{ fontSize: "50px" }} />
           </IconButton>
 
           <IconButton
