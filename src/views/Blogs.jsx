@@ -1,12 +1,15 @@
  import React from "react";
 import { Link } from "react-router-dom";
 import BlogPost from "../model/BlogPost";
+import { Helmet } from "react-helmet-async";
 
  const Blogs = () => {
    let posts = BlogPost()
     return (
       <>
-    
+    <Helmet>
+            <title>Blog - Sathish kumar S | Developer | Sathishwebdev</title>
+        </Helmet>
       <div className="projects">
         <div className="pro-con">
           {posts.length === 0 ? <p>Empty</p> : posts.map(({author, title, authorImage, postImage, param,id}, key) => (

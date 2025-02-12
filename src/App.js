@@ -7,6 +7,8 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import Button from './components/mui/Button'
 import BlogPost from './model/BlogPost';
 import { IconButton } from "./components/mui";
+import { Helmet } from "react-helmet-async";
+import SEO from "./components/SEO";
 
 
 AOS.init();
@@ -50,6 +52,10 @@ const Project = () => {
           <div className="loader"></div>
         ) : (
           <article>
+            <SEO 
+            title = {`${project[0].name} | Project | Sathishwebdev`}
+            description= {project[0].Description}
+            />
             <section style={{ display: "flex", alignItems: "center" }}>
               <div>
                 <img

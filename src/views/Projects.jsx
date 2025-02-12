@@ -3,11 +3,13 @@ import * as Icons from "@mui/icons-material";
 import ProjectModel from "../model/ProjectModel";
 import { Link } from "react-router-dom";
 import Button from '../components/mui/Button'
+import SEO from "../components/SEO";
   
 const Projects = () => {
 
     return (
       <div className="projects">
+        <SEO title = "Projects - Sathish kumar S | Developer | Sathishwebdev" />
         <div className="pro-con">
           {ProjectModel.map((pro, key) => (
             <div key={key} className="pro-card">
