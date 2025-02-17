@@ -6,7 +6,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #FEC10A; */
+  /* background-color: #D4AC3D; */
   font-family: "hussor-bold";
 overflow-x : hidden;
 }
@@ -25,5 +25,5 @@ a{
 }
 a:hover{
   text-decoration: none;
-  color: #ffce0a
+  color: #D4AC3D
 }

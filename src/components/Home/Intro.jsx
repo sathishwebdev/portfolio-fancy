@@ -1,5 +1,6 @@
 import {Button, IconButton} from '../mui'
 import IntroIconModel from '../../model/IntroIconModel'
+import { FileDownload } from '@mui/icons-material';
 
 const Intro = () => (<div
         className="full-con"
@@ -32,9 +33,13 @@ const Intro = () => (<div
             )) }
 
             <Button 
+            sx={{
+              border:"2px solid white",
+              backgroundColor:"transparent"
+            }}
             onClick={()=>{
                 window.open("https://drive.google.com/file/d/1F09U5KGvii9vkK1EPBwCcltKnz8rCUX3/view?usp=sharing", "_blank")}}>
-              Resume
+              <FileDownload/>   Resume
             </Button>
           </div>
           

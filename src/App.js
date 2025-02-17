@@ -169,7 +169,7 @@ const Project = () => {
           </div>
          
       </div>
-      <div className="fixed-bottom text-uppercase d-flex d-md-none align-items-center justify-content-center" style={{backgroundColor:"#FEC10A", width:"100%", minHeight:"50px", fontSize:"20px"}} >
+      <div className="fixed-bottom text-uppercase d-flex d-md-none align-items-center justify-content-center" style={{backgroundColor:"#D4AC3D", width:"100%", minHeight:"50px", fontSize:"20px"}} >
 
           <a href="mailto:sathishweb27@gmail.com" style={{color:"black", cursor:"pointer"}}>Mail me</a>
 

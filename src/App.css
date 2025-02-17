@@ -90,7 +90,7 @@ backdrop-filter: blur(13.2px);
   align-items: top;
   justify-content: top;
   padding: 2%;
-  background-color: #FEC10A;
+  background-color: #D4AC3D;
 }
 
 small{
@@ -217,7 +217,7 @@ small{
   margin: 20px;
 }
 .pro-details h2{
-  color: #FEC10A;
+  color: #D4AC3D;
   text-transform: capitalize;
 }
 .pro-details small{
@@ -233,7 +233,7 @@ article{
 }
 
 article h1{
-  color: #FEC10A;
+  color: #D4AC3D;
   text-transform: capitalize;
 }
 

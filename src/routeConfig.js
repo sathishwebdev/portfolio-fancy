@@ -7,7 +7,6 @@ import {Home, Projects, Blogs, Post} from './views'
 import { IconButton } from './components/mui'
 import NavModel from './model/NavModel'
 import { Contact } from './components/Home'
-import { Helmet } from 'react-helmet-async'
 import SEO from './components/SEO'
 
 
@@ -114,18 +113,28 @@ const NavBar = () =>{
        >
        Contact
        </Button>
-{ 
-      /* <mui.Button
-       sx={{
-         backgroundColor:'#ffce0a',
+
+       <Button
+       style={{
+         backgroundColor:'#D4AC3D',
          color:'black',
          fontFamily:'hussor-bold'
        }}
-
+       href='/contact'
        >
-        <Icons.AttachMoneyRounded /> Buy me a Coffee ☕
-       </mui.Button> */
-       }
+        <Icons.Work /> Hire Me
+       </Button> 
+  <mui.Button
+  sx={{
+    border:"2px solid white",
+    backgroundColor:"transparent",
+    color:"white"
+  }}
+  onClick={()=>{
+    window.open("https://drive.google.com/file/d/1F09U5KGvii9vkK1EPBwCcltKnz8rCUX3/view?usp=sharing", "_blank")}}
+  >
+   <Icons.FileDownload/> Resume
+  </mui.Button>
       
   </div>
    
@@ -149,7 +158,7 @@ const CollapesNav = () =>{
     setNavStatus(true)
   }
 
-  return <>
+  return <div className='row justify-content-between mx-2'>
   <div className='nav-btn' >
     <IconButton
       onClick={!navStatus ? OpenMenu : CloseMenu}
@@ -174,6 +183,24 @@ const CollapesNav = () =>{
        }} />
          </IconButton> }
     </div>
+  
+    <Button
+       style={{
+         backgroundColor:'#D4AC3D',
+         color:'black',
+         fontFamily:'hussor-bold'
+       }}
+       href='/contact'
+       >
+        <Icons.Work /> Hire Me
+       </Button> 
+  <Button
+  onClick={()=>{
+    window.open("https://drive.google.com/file/d/1F09U5KGvii9vkK1EPBwCcltKnz8rCUX3/view?usp=sharing", "_blank")}}
+  >
+   <Icons.FileDownload/> Resume
+  </Button>
+
   </div>
     <div
     className='collopse-nav' id="c-nav"
@@ -191,6 +218,6 @@ const CollapesNav = () =>{
       </Button>
    )) }
     </div>
-  </>
+  </div>
 
 }
