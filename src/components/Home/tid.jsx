@@ -8,9 +8,9 @@ const Tid = () => {
           <br />
         </div>
 
-        <div className="row justify-content-center align-items-center" style={{  maxWidth : "1200px"}}>
+        <div  style={{  maxWidth : "1200px"}}>
 
-<div  className="col">
+<div >
         {Object.keys(ThingsModel).map(( key, id)=>
         <>
           {/* <p id={`${key}-${id}`} className="d-block d-xl-none" style={{  color: "#fcdc4e"}} >{key.toUpperCase()}</p> */}
@@ -43,25 +43,25 @@ const Tid = () => {
           </div>
         </>
         )}
-         <div className="dark-con glass" > 
-          <div className="row">
+        </div>
+        </div>
+        <div className=" pad glass " > 
+        <div className="row wrap justify-content-center align-items-start">
         {Object.keys(ThingsModel).map(( key, id)=>
-        <div className="col justify-space-around align-items-center">
+        <div className="col-12 col-md pad">
          
-            <p id={`${key}-${id}`}  style={{  color: "#fcdc4e"}} >{key.toUpperCase()}</p>
-           <div className="row"> 
+            <p id={`${key}-${id}`}  style={{  color: "#fcdc4e", textAlign:"center"}} >{key.toUpperCase()}</p>
+           <div className="row  justify-content-around align-items-center "> 
             
           {
               ThingsModel[key].map(({name, link}, id2)=>(
-                ( <p className="pad glass" >{name.toUpperCase()}</p>)
+                ( <p className="pad m-1 glass" >{name.toUpperCase()}</p>)
               ))}
           
           </div>
      
         </div>
         )} </div>
-        </div>
-</div>
         </div>
       </div>
 )}

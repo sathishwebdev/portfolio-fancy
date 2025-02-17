@@ -1,6 +1,6 @@
 const About = () =>(
-    <div className=" glass" style={{ flexDirection: "row" }}>
-        <div style={{ width: "100%", maxWidth: "1200px" }}>
+    <div className="row justify-content-center align-items-center ">
+        <div className="glass pad" style={{ width: "100%", maxWidth: "800px" }}>
           <h2 style={{textAlign:'center'}} >About Me !</h2>
           <div
             className="center"
