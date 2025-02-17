@@ -17,7 +17,7 @@ const Tid = () => {
           <div className="row" >
           {/* <p id={`${key}-${id}`} className="d-none d-xl-block" style={{textAlign:"center", writingMode:"sideways-lr", textOrientation:"sideways", color: "#fcdc4e"}} >{key.toUpperCase()}</p> */}
           <div className="scroll-container">
-            <div className={`scroll-content ${id%2==0? "scroll-right" : "scroll-left"}`}>{
+            <div className={`scroll-content ${id%2===0? "scroll-right" : "scroll-left"}`}>{
                   ThingsModel[key].map(({name, link}, id2)=>(
                     ( <img
                       key={`${key}-${id}-${id2}`}
