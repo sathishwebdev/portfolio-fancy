@@ -1,5 +1,5 @@
 const ThingsModel = {
-    languages:[
+    "languages & Tools":[
         {
             name:"html5",
             link:"TID-img/html.jpg"
@@ -19,9 +19,7 @@ const ThingsModel = {
         {
             name: "Python",
             link: "TID-img/python.jpg"
-        }
-    ],
-    tools:[
+        },
         {
             name:"git",
             link:"TID-img/git.jpg"
@@ -43,7 +41,7 @@ const ThingsModel = {
             link:"TID-img/postman.jpg"
         },
     ],
-    frameworks:[
+    "frameworks & Consoles":[
         {
             name : "Bootstrap",
             link:"TID-img/bootstrap.jpg"
@@ -59,9 +57,7 @@ const ThingsModel = {
         {
             name:"React",
             link:"TID-img/react.jpg"
-        }
-    ],
-    consoles:[
+        },
         {
             name : "MS Office",
             link:"TID-img/msoffice.jpg"
@@ -85,9 +81,7 @@ const ThingsModel = {
         {
             name:"AWS",
             link:"TID-img/aws.jpg"
-        }
-    ],
-    databases:[ 
+        },
         {
             name:"MongoDB",
             link:"TID-img/mongodb.jpg"

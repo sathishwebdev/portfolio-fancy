@@ -1,5 +1,5 @@
 const About = () =>(
-    <div className="dark-con" style={{ flexDirection: "row" }}>
+    <div className=" glass" style={{ flexDirection: "row" }}>
         <div style={{ width: "100%", maxWidth: "1200px" }}>
           <h2 style={{textAlign:'center'}} >About Me !</h2>
           <div

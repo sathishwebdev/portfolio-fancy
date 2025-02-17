@@ -9,8 +9,9 @@ const Intro = () => (<div
           <img
             alt="portfolio"
             title="poster"
-            style={{ height: "45vh" }}
-            src="mypic.jpg"
+            height="300px"
+            style={{marginTop:"-75px"}}
+            src="profile.webp"
             loading='lazy'
           />
         </div>
@@ -18,7 +19,7 @@ const Intro = () => (<div
           <h1 className="titleName">Sathish Kumar S</h1>
           <small>MERN STACK - ANDROID DEVELOPER</small>
           {/* social icons */}
-          <div>
+          <div className='col'>
             {IntroIconModel.map((data,id)=>(
                 <IconButton
                 key = {id}
@@ -36,6 +37,17 @@ const Intro = () => (<div
               Resume
             </Button>
           </div>
+          
+          <div className='row glass pad m-0 justify-content-center align-items-center'>
+            <div className='col'>
+            <h6>Adiuvo Diagnostics Pvt. Ltd.</h6>
+            <small>Full Stack Engineer - Research and Development</small>
+            </div>
+            <div className='col'>
+              <p className='w-100 primary-text' style={{textAlign:"center"}}>2022-Present</p>
+            </div>
+          </div>
+
         </div>
       </div>);
 

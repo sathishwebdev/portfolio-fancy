@@ -1,5 +1,40 @@
 html, body{
-  background-color: #FEC10A;
+  background: url("assets\\img\\bg.svg");
+  background-blend-mode: normal;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-color: #202020;
+  background-size:cover;
+  color: white;
+}
+
+
+.primary-text{
+  color: #D4AC3D
+}
+
+.grayOut{
+  filter: grayscale(100%);
+}
+
+.glass{
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.1);
+border-radius: 24px;
+backdrop-filter: blur(13.2px);
+-webkit-backdrop-filter: blur(13.2px);
+}
+
+.title-text {
+	font-size: 24px;
+	font-family: JetBrains Mono;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+.effect-style-glassmorphism {
+	backdrop-filter : blur(4px);
 }
 .pad{
   padding: 3%;
@@ -13,7 +48,6 @@ html, body{
   align-items: center;
   justify-content: center;
   padding: 2%;
-  background-color: #FEC10A;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -25,7 +59,6 @@ html, body{
   align-items: center;
   justify-content: center;
   padding: 2%;
-  background-color: #FEC10A;
 }
 .dark-con{
   display: flex;
@@ -34,7 +67,6 @@ html, body{
   align-items: center;
   justify-content: center;
   padding: 2%;
-  background-color: #1f1f1f;
   color: whitesmoke;
   border-radius: 24px;
   margin: 1%;
@@ -322,4 +354,48 @@ border: none;
 img{
   object-fit: cover;
   border-radius: 8px;
+}
+
+
+.scroll-container {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scroll-content {
+  gap: 10px;
+  width: 100%;
+}
+
+.scroll-content img{
+  min-width: 200px;
+  max-height: 200px;
+  margin: 1%;
+}
+
+img:hover {
+  transform: scale(1.25);
+}
+
+.scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.scroll-right {
+  animation: scroll-right 15s linear infinite;
+}
+
+@keyframes scroll-stop{
+  from{ transform: translateX(0%); }
+  to{ transform: translateX(0%); }
+}
+
+@keyframes scroll-left {
+  from{ transform: translateX(-10%); }
+  to{ transform: translateX(-200%); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(-200%); }
+  to { transform: translateX(-10%); }
 }
