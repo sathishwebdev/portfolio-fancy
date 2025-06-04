@@ -135,7 +135,8 @@ const NavBar = () =>{
   >
    <Icons.FileDownload/> Resume
   </mui.Button>
-      
+
+  <Button href="https://www.buymeacoffee.com/sathishkumar"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sathishkumar&button_colour=d4ac3d&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me A Coffee" /></Button>    
   </div>
    
 }
@@ -201,6 +202,8 @@ const CollapesNav = () =>{
    <Icons.FileDownload/> Resume
   </Button>
 
+  
+
   </div>
     <div
     className='collopse-nav' id="c-nav"
@@ -217,6 +220,8 @@ const CollapesNav = () =>{
       {name}
       </Button>
    )) }
+
+   <Button href="https://www.buymeacoffee.com/sathishkumar"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sathishkumar&button_colour=d4ac3d&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" alt="Buy Me A Coffee" /></Button>    
     </div>
   </div>
 
