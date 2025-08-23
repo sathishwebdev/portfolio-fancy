@@ -32,7 +32,7 @@ const Home = () => {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "business",
-      "availableLanguage": ["English", "Tamil", "Hindi"],
+      "availableLanguage": ["English", "Tamil"],
       "name": "Sathish Kumar S",
       "url": "https://sathishwebdev.com",
       "email": "sathishweb27@gmail.com",
