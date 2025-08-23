@@ -7,7 +7,6 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import Button from './components/mui/Button'
 import BlogPost from './model/BlogPost';
 import { IconButton } from "./components/mui";
-import { Helmet } from "react-helmet-async";
 import SEO from "./components/SEO";
 
 
@@ -35,6 +34,25 @@ const Project = () => {
     }
   };
 
+  const schema =(project) => { 
+    return {
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": project.name,
+            "description": project.Description,
+            "url": `https://sathishwebdev.com${location.pathname}`,
+            "image": `https://sathishwebdev.com${project.img}`,
+            "author": {
+              "@type": "Person",
+              "name": "Sathish Kumar",
+              "url": "https://sathishwebdev.com"
+            },
+            "programmingLanguage": ["JavaScript", "React", "Firebase"],
+            "keywords": ["React", "Firebase", "Project", "Hands=on project", "Sathish Kumar", "Sathishwebdev"],
+            "dateCreated": "2023-07-01"
+          }
+  }
+
   return (
     <div
     ref={forScroll}
@@ -55,6 +73,8 @@ const Project = () => {
             <SEO 
             title = {`${project[0].name} | Project | Sathishwebdev`}
             description= {project[0].Description}
+            schema={schema(project[0])}
+            keywords={project[0].name}
             />
             <section style={{ display: "flex", alignItems: "center" }}>
               <div>

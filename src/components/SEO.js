@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-const SEO = ({ title, description, keywords }) => {
+const SEO = ({ title, description, keywords, schema }) => {
 
     const defaultTitle = "Sathish Kumar S | Full-Stack Developer | Sathishwebdev";
   const defaultDescription = 
@@ -30,6 +30,9 @@ const SEO = ({ title, description, keywords }) => {
     <meta name="twitter:title" content={title || defaultTitle} />
     <meta name="twitter:description" content={description || defaultDescription} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@sathishkumars_" />
+    <meta name="twitter:creator" content="@sathishkumars_" />
+    {schema && <script type="application/ld+json">{JSON.stringify(schema)}</script>}
   </Helmet>
   );
 };

@@ -10,7 +10,7 @@ const Contact = () =>{
           <IconButton
             color="inherit"
             className="icon-link"
-            onClick={()=>{window.open("https://linkedin.sathishwebdev.com", '_blank')}}
+            onClick={()=>{window.open("https://www.linkedin.com/in/sathishwebdev/", '_blank')}}
           >
             <LinkedIn sx={{ fontSize: "50px" }} />
           </IconButton>
@@ -18,14 +18,14 @@ const Contact = () =>{
           <IconButton
             color="inherit"
             className="icon-link"
-            onClick={()=>{window.open("https://whatsapp.sathishwebdev.com", '_blank')}}
+            onClick={()=>{window.open("https://wa.me/+918940800307", '_blank')}}
           >
             <WhatsApp sx={{ fontSize: "50px" }} />
           </IconButton>
           <IconButton
             color="inherit"
             className="icon-link"
-            onClick={()=>{window.open("https://instagram.sathishwebdev.com", '_blank')}}
+            onClick={()=>{window.open("https://instagram.com/sathishkumars_", '_blank')}}
           >
             <Instagram sx={{ fontSize: "50px" }} />
           </IconButton>
@@ -33,7 +33,7 @@ const Contact = () =>{
           <IconButton
             color="inherit"
             className="icon-link"
-            onClick={()=>{window.open("https://git.sathishwebdev.com", '_blank')}}
+            onClick={()=>{window.open("https://github.com/sathishwebdev", '_blank')}}
           >
             <GitHub sx={{ fontSize: "50px" }} />
           </IconButton>

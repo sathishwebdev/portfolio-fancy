@@ -29,6 +29,36 @@ fontFamily:"hussor-bold",
 }));
 
 function RouteConfig() {
+  const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is Sathish Kumar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sathish Kumar is a Full Stack and Android Developer specializing in scalable applications, with expertise in Java, React, Node.js, and Android OpenGL rendering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services does Sathish Kumar provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I build Android applications, React web dashboards, and full stack solutions with Node.js, MongoDB, Firebase, and cloud integrations. In Otherhand, business promotional sites like product landing page and company landing page or portfolios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I hire Sathish Kumar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can reach me via email at sathishweb27@gmail.com or through LinkedIn at https://www.linkedin.com/in/sathishwebdev/"
+      }
+    }
+  ]
+}
   return <BrowserRouter>
   <div className="d-none d-md-block" >
     <NavBar />
@@ -44,12 +74,12 @@ function RouteConfig() {
         <Route exact path='blog/post/:postId/:postName' element={<Post />} />
         <Route exact path='contact' element={<div className='full-con' >
           <SEO title = "Contact - Sathish kumar S | Developer | Sathishwebdev"
+          schema={faqSchema}
           />
           <Contact /></div>} />
 
         <Route path='*' element={<div className='App'>
             <div className="full-con" >
-           
                 <h1 style={{
                     fontSize:"50px"
                 }} >404</h1>
